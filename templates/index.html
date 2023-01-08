@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Capital City Guesser</title>
+</head>
+<body>
+    <h1>Capital Guesser</h1>
+
+    <h2>What is the Capital of {{ country }}?</h2>
+
+    <form action='' method='post'>{% csrf_token %}
+
+        <input name='answer' placeholder="Enter your answer"></input>
+
+    </form>
+
+</body>
+</html>

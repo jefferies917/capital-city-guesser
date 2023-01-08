@@ -12,8 +12,12 @@ Install Packages:
 
     pipenv install
 
+Apply Migrations:
+
+    pipenv run python manage.py migrate
+
 Start Development Server:
 
     pipenv run python manage.py runserver
 
-Link to app [here](127.0.0.1:8000)
+Link to app [here](https://127.0.0.1:8000)
