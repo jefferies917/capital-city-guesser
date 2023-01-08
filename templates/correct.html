@@ -1,11 +1,11 @@
-<html>
-<head>
-    <title>Capital City Guesser</title>
-</head>
-<body>
-    <h1>Capital Guesser</h1>
+{% extends 'base.html' %}
 
-    <h2>You said {{ capital }} is the Capital of {{ country }}, you are Correct</h2>
+{% block content %}
 
-</body>
-</html>
+<h2>Correct! The Capital of {{ country }} is {{ capital }}</h2>
+
+<form>
+    <input type="button" value="Try again!" onclick="history.back()">
+</form>
+
+{% endblock %}

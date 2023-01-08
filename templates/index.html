@@ -1,17 +1,11 @@
-<html>
-<head>
-    <title>Capital City Guesser</title>
-</head>
-<body>
-    <h1>Capital Guesser</h1>
+{% extends 'base.html' %}
 
-    <h2>What is the Capital of {{ country }}?</h2>
+{% block content %}
 
-    <form action='' method='post'>{% csrf_token %}
+<h2>What is the Capital of {{ country }}?</h2>
 
-        <input name='answer' placeholder="Enter your answer"></input>
+<form action='' method='post'>{% csrf_token %}
+    <input name='answer' placeholder="Enter your answer"></input>
+</form>
 
-    </form>
-
-</body>
-</html>
+{% endblock %}
